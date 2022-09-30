@@ -1,5 +1,5 @@
 <?php
 if (isset(['send'])) {
-    $sql = "SELECT FROM user WHERE id = $id ";
+    $sql = "SELECT FROM mahasiswa WHERE id = $id ";
     $query = mysqli_query($koneksi, $sql);
 }

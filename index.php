@@ -25,7 +25,7 @@ include 'koneksi/inc.php';
 
     <?php if (isset($_GET['kode'])) {
         $id = $_GET['kode'];
-        $sql = "SELECT * FROM user WHERE id = $id ";
+        $sql = "SELECT * FROM mahasiswa WHERE id = $id ";
         $query = mysqli_query($koneksi, $sql);
         $data_old = mysqli_fetch_array($query, MYSQLI_BOTH);
     ?>
@@ -68,13 +68,13 @@ include 'koneksi/inc.php';
         <?php
         $no = 1;
         if (isset($_GET['cari'])) {
-            $queri = "SELECT * FROM user WHERE 
+            $queri = "SELECT * FROM mahasiswa WHERE 
             nama like '%" . $cari . "%' 
             || nrp like '%" . $cari . "%' 
             || prodi like '%" . $cari . "%'";
             $sql = mysqli_query($koneksi, $queri);
         } else {
-            $sql = mysqli_query($koneksi, 'SELECT * FROM user');
+            $sql = mysqli_query($koneksi, 'SELECT * FROM mahasiswa');
         }
         if (mysqli_num_rows($sql) > 0) {
             while ($data = mysqli_fetch_array($sql)) {

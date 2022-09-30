@@ -5,7 +5,7 @@ if (isset($_POST['kirim'])) {
     $nama = $_POST['nama'];
     $nrp = $_POST['nrp'];
     $prodi = $_POST['prodi'];
-    $sql_ubah = "UPDATE user SET
+    $sql_ubah = "UPDATE mahasiswa SET
 		nama='$nama',
 		nrp='$nrp',
 		prodi='$prodi'		

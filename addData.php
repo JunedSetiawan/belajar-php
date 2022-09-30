@@ -5,7 +5,7 @@ if (isset($_POST['kirim'])) {
     $nama = $_POST['nama'];
     $nrp = $_POST['nrp'];
     $prodi = $_POST['prodi'];
-    $sql = "INSERT INTO user (nama,nrp,prodi) 
+    $sql = "INSERT INTO mahasiswa (nama,nrp,prodi) 
     VALUES ('$nama','$nrp','$prodi')";
     $query = mysqli_query($koneksi, $sql);
     if ($query) {
