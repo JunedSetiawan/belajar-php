@@ -1,6 +1,0 @@
-Apa itu Seeder dalam laravel?
-Pengetian Seeder
-
-Seperti artinya, Seeder (benih) ini adalah sebuah fungsi untuk menanamkan Benih berupa Data pada Database kita. Jadi saat nanti kita melakukan migrations , Database kita sudah terisi Data dari hasil Seeder kita.
-
-Migration merupakan salah satu fitur Laravel yang berfungsi seperti version control untuk database. Melalui fitur ini sebuah team pengembangan web development akan dapat bekerja dalam team untuk mengelola dan modifikasi skema basis data aplikasi.	
